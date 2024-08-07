@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  /* @apply bg-background;
+  -webkit-tap-highlight-color: transparent; */
+  width: 100vw;
+  height: 100vh;
+}
+
+.icon-style {
+  fill: rgba(255, 38, 0.2) !important; /* Add !important if needed */
+  stroke: rgba(255, 38, 0.2) !important; /* Optional: for the outline */
+}
+
+@layer base {
+  :root {
+    --n1: #292840; 
+  }
+}
+
+@layer utilities {
+  @layer responsive {
+
+  /* Chrome, Safari and Opera */
+  .thin-scrollbar::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background: transparent;
+    margin-top: 4rem;
+    margin-bottom: 50rem;
+  }
+
+  /* .thin-scrollbar::-webkit-scrollbar-track {
+    background: #FFFFFF;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+  } */
+  .thin-scrollbar::-webkit-scrollbar-thumb {
+    background: #FFFFFF;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+
+}
+}
